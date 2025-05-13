@@ -1,6 +1,9 @@
 
-import { useState } from 'react'
 import './App.css'
+
+import { useState } from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import MisMascotas from './pages/MisMascotas';
 
 
 
@@ -16,18 +19,34 @@ import AboutUs from './components/AboutUs';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <Navbar />
-      <Services />
-      <Carousel />
-      <WhatsAppButton />
-      <ProductList />
-      <ProductCard />
-      <AboutUs />
+
+      {/* Puedes agregar enlaces de navegación temporales para prueba */}
+      <nav style={{ padding: '1rem' }}>
+        <Link to="/">Inicio</Link> | <Link to="/mis-mascotas">Mis Mascotas</Link>
+      </nav>
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Services />
+              <Carousel />
+              <WhatsAppButton />
+              <ProductList />
+              <ProductCard />
+              <AboutUs />
+            </>
+          }
+        />
+        <Route path="/mis-mascotas" element={<MisMascotas />} />
+      </Routes>
+
       <Footer />
-      
-    </>
+    </BrowserRouter>
   );
 }
 
