@@ -23,10 +23,10 @@ function App() {
       <Header />
       <Navbar />
 
-      {/* Puedes agregar enlaces de navegación temporales para prueba */}
+      {/* Puedes agregar enlaces de navegación temporales para prueba 
       <nav style={{ padding: '1rem' }}>
-        <Link to="/">Inicio</Link> | <Link to="/mis-mascotas">Mis Mascotas</Link>
-      </nav>
+        <Link to="/">Inicio</Link> 
+      </nav> */}
 
       <Routes>
         <Route

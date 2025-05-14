@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const links = [
     
+    { label: 'INICIO', path: '/' },
     { label: 'MIS MASCOTAS', path: '/mis-mascotas' },
     { label: 'PRODUCTOS Y OFERTAS', path: '/productos' },
     { label: 'SERVICIOS', path: '/servicios' },
