@@ -9,7 +9,7 @@ const Navbar = () => {
     { label: 'MIS MASCOTAS', path: '/mis-mascotas' },
     { label: 'PRODUCTOS Y OFERTAS', path: '/productos' },
     { label: 'SERVICIOS', path: '/servicios' },
-    { label: 'CAMPAÑAS DE VACUNACION', path: '/campañas' },
+    { label: 'CAMPAÑAS Y VACUNACION', path: '/campañas' },
       
     ];
   

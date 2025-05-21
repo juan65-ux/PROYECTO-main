@@ -1,10 +1,15 @@
 // src/components/Header.jsx
 import { FaStore, FaUserCircle, FaShoppingCart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   return (
     <header className="flex justify-between items-center p-4 bg-white shadow">
-      <img src="/images/logo.png" alt="Logo" className="h-14" />
+  <Link to="/">
+    <img src="/images/logo.png" alt="Logo" className="h-14" />
+  </Link>
+
 
       <div className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full w-1/3">
         <button>

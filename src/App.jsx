@@ -17,6 +17,8 @@ import ProductList from './components/Home/ProductList';
 import Services from './components/Home/Services';
 import ProductCard from './components/Home/ProductCard';
 import AboutUs from './components/Home/AboutUs';
+import Servicios from './pages/Servicios';
+import CampañasdeVacunacion from './pages/CampañasdeVacunacion';
 
 function App() {
   return (
@@ -45,6 +47,9 @@ function App() {
         />
         <Route path="/mis-mascotas" element={<MisMascotas />} />
         <Route path="/productos" element={<ProductosyOfertas />} />
+        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/campañas" element={<CampañasdeVacunacion />} />
+        {/* Puedes agregar más rutas aquí */}
       </Routes>
       {/* Puedes agregar más rutas aquí */}
 
