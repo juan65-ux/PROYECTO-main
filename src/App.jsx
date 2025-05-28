@@ -20,6 +20,11 @@ import AboutUs from './components/Home/AboutUs';
 import Servicios from './pages/Servicios';
 import CampañasdeVacunacion from './pages/CampañasdeVacunacion';
 
+import Tienda from './pages/Tienda';
+import Perfil from './pages/Perfil';
+import Carrito from './pages/Carrito';
+import Login from './pages/Login';
+
 function App() {
   return (
     <BrowserRouter>
@@ -49,9 +54,12 @@ function App() {
         <Route path="/productos" element={<ProductosyOfertas />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/campañas" element={<CampañasdeVacunacion />} />
-        {/* Puedes agregar más rutas aquí */}
+        <Route path="/tienda" element={<Tienda />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/carrito" element={<Carrito />} />
+        <Route path="/login" element={<Login />} />
+
       </Routes>
-      {/* Puedes agregar más rutas aquí */}
 
       <Footer />
     </BrowserRouter>
