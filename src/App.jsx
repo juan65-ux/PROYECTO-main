@@ -25,6 +25,14 @@ import Services from './components/Home/Services';
 import ProductCard from './components/Home/ProductCard';
 import AboutUs from './components/Home/AboutUs';
 import Mapa from './components/Home/Mapa';
+import Servicios from './pages/Servicios';
+import CampañasdeVacunacion from './pages/CampañasdeVacunacion';
+
+import Tienda from './pages/Tienda';
+import Perfil from './pages/Perfil';
+import Carrito from './pages/Carrito';
+import Login from './pages/Login';
+
 function App() {
   const [modalAbierto, setModalAbierto] = useState(false);
   const abrirCarrito = () => setModalAbierto(true);
@@ -63,6 +71,11 @@ function App() {
         <Route path="/productos/gatos" element={<ProductosGatos />} />
         <Route path="/productos/conejos" element={<ProductosConejos />} />
         <Route path="/Mapa" element={<Mapa />} />    
+        <Route path="/tienda" element={<Tienda />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/carrito" element={<Carrito />} />
+        <Route path="/login" element={<Login />} />
+
       </Routes>
 
       <CarritoModal isOpen={modalAbierto} onClose={cerrarCarrito} />
