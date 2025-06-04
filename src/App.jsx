@@ -1,4 +1,3 @@
-
 import './App.css';
 
 import { useState } from 'react';
@@ -6,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import MisMascotas from './pages/MisMascotas';
 import ProductosyOfertas from './pages/ProductosyOfertas';
-import Servicios from './pages/Servicios';
+import ServiciosPage from './pages/Servicios'; // ✅ Renombrado para evitar conflicto
 import CampañasdeVacunacion from './pages/CampañasdeVacunacion';
 
 import ProductosPerros from './components/Productos/ProductosPerros';
@@ -21,12 +20,10 @@ import Carousel from './components/Home/Carousel';
 import WhatsAppButton from './components/Home/WhatsAppButton';
 import Footer from './components/Home/Footer';
 import ProductList from './components/Home/ProductList';
-import Services from './components/Home/Services';
 import ProductCard from './components/Home/ProductCard';
 import AboutUs from './components/Home/AboutUs';
 import Mapa from './components/Home/Mapa';
-import Servicios from './pages/Servicios';
-import CampañasdeVacunacion from './pages/CampañasdeVacunacion';
+import Services from './components/Home/Services'; // ✅ Componente del Home
 
 import Tienda from './pages/Tienda';
 import Perfil from './pages/Perfil';
@@ -37,6 +34,7 @@ function App() {
   const [modalAbierto, setModalAbierto] = useState(false);
   const abrirCarrito = () => setModalAbierto(true);
   const cerrarCarrito = () => setModalAbierto(false);
+
   const [modalLoginAbierto, setModalLoginAbierto] = useState(false);
   const abrirLogin = () => setModalLoginAbierto(true);
   const cerrarLogin = () => setModalLoginAbierto(false);
@@ -65,17 +63,16 @@ function App() {
         />
         <Route path="/mis-mascotas" element={<MisMascotas />} />
         <Route path="/productos" element={<ProductosyOfertas />} />
-        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/servicios" element={<ServiciosPage />} /> {/* ✅ cambiado */}
         <Route path="/campañas" element={<CampañasdeVacunacion />} />
         <Route path="/productos/perros" element={<ProductosPerros />} />
         <Route path="/productos/gatos" element={<ProductosGatos />} />
         <Route path="/productos/conejos" element={<ProductosConejos />} />
-        <Route path="/Mapa" element={<Mapa />} />    
+        <Route path="/mapa" element={<Mapa />} />
         <Route path="/tienda" element={<Tienda />} />
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/carrito" element={<Carrito />} />
         <Route path="/login" element={<Login />} />
-
       </Routes>
 
       <CarritoModal isOpen={modalAbierto} onClose={cerrarCarrito} />
