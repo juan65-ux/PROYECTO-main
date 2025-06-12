@@ -10,6 +10,7 @@ const Navbar = () => {
     { label: 'PRODUCTOS Y OFERTAS', path: '/productos' },
     { label: 'SERVICIOS', path: '/servicios' },
     { label: 'CAMPAÑAS Y VACUNACION', path: '/campañas' },
+
       
     ];
   

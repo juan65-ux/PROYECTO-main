@@ -1,11 +1,27 @@
-import React from 'react';
 
-const MisMascotas = () => {
+
+import Macostas from '../components/Home/mascota/mascotainfo';
+import Bara from '../components/Home/mascota/baramascota';
+
+
+function Asa () {
   return (
-    <div>
-      <h1>Estas son tus mascotas 🐶🐱</h1>
-    </div>
-  );
+    <>
+    <Bara />
+    <Macostas />
+    
+    
+    </>
+
+    
+
+
+
+    
+  );  
 };
 
-export default MisMascotas;
+export default Asa;
+
+
+

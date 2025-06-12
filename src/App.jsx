@@ -5,6 +5,13 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import MisMascotas from './pages/MisMascotas';
 import ProductosyOfertas from './pages/ProductosyOfertas';
+import NuevaMascota from './pages/nuevamascota';
+import MisuPage from './components/Home/mascota/infomax';
+import VacunasMax from './components/Home/mascota/vacunasmax';
+import Vacunasrejisto from './components/Home/mascota/vacunasrejisto';
+
+
+
 
 
 
@@ -49,6 +56,12 @@ function App() {
         <Route path="/productos" element={<ProductosyOfertas />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/campañas" element={<CampañasdeVacunacion />} />
+        <Route path="/" element={<MisMascotas />} />
+        <Route path="/nuevamascota" element={<NuevaMascota />} />
+        <Route path="/infomax" element={<MisuPage />} />
+        <Route path="/registro-vacunas" element={<VacunasMax />} />
+        <Route path="/vacunas" element={<Vacunasrejisto />} />
+
         {/* Puedes agregar más rutas aquí */}
       </Routes>
       {/* Puedes agregar más rutas aquí */}
